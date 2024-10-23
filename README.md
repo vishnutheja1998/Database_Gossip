@@ -3,7 +3,7 @@ This is a AWS Cloud-based application that seamlessly captures and stores user-s
 
 The application's architecture is built on a serverless foundation, utilizing **AWS Lambda functions** to process incoming requests efficiently. These functions are triggered through **API Gateway**, which acts as a secure front door for the application's API
 
-At the heart of NameVault lies **Amazon DynamoDB**, a fast and flexible NoSQL database service perfectly suited for storing and retrieving name entries at scale. The project implements robust security measures through **AWS Identity and Access Management (IAM)**, ensuring that only authorized entities can access and manipulate the stored data
+At the heart of Database_Gossip lies **Amazon DynamoDB**, a fast and flexible NoSQL database service perfectly suited for storing and retrieving name entries at scale. The project implements robust security measures through **AWS Identity and Access Management (IAM)**, ensuring that only authorized entities can access and manipulate the stored data
 
 # Key features of Database_Gossip include:
 1: Real-time data synchronization
@@ -26,7 +26,7 @@ The project features a simple and intuitive web-based user interface designed fo
 
 This clean and straightforward interface allows users to easily input and submit their full names. The design focuses on simplicity, making it accessible for users of all technical levels. When the submit button is clicked, the entered first and last names are likely processed and stored in the backend DynamoDB database through the AWS services infrastructure.
 
-The UI serves as the entry point for the NameVault application, providing a user-friendly way to interact with the underlying AWS services, including Lambda functions, **API Gateway**, and DynamoDB. Its minimalist design ensures fast loading times and compatibility across various devices and browsers.
+The UI serves as the entry point for the Database_Gossip application, providing a user-friendly way to interact with the underlying AWS services, including Lambda functions, **API Gateway**, and DynamoDB. Its minimalist design ensures fast loading times and compatibility across various devices and browsers.
 
 
 
