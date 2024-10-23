@@ -13,6 +13,14 @@ At the heart of Database_Gossip lies **Amazon DynamoDB**, a fast and flexible No
 
 
 
+## Image As shown Below from UI
+![image](https://github.com/user-attachments/assets/b2865308-988e-4665-96cc-c98c046b2d88)
+
+## Image as shown below through API updated in Dynamo DB Database
+![image](https://github.com/user-attachments/assets/98b2ca5e-3e7d-44fd-8bbb-2bb11856f075)
+
+
+
 # User Interface Description: 
 The project features a simple and intuitive web-based user interface designed for efficient name submission. The UI consists of the following elements:
 
@@ -27,7 +35,6 @@ The project features a simple and intuitive web-based user interface designed fo
 This clean and straightforward interface allows users to easily input and submit their full names. The design focuses on simplicity, making it accessible for users of all technical levels. When the submit button is clicked, the entered first and last names are likely processed and stored in the backend DynamoDB database through the AWS services infrastructure.
 
 The UI serves as the entry point for the Database_Gossip application, providing a user-friendly way to interact with the underlying AWS services, including Lambda functions, **API Gateway**, and DynamoDB. Its minimalist design ensures fast loading times and compatibility across various devices and browsers.
-
 
 
 # Lambda Handler Function Description
