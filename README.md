@@ -16,7 +16,7 @@ At the heart of Database_Gossip lies **Amazon DynamoDB**, a fast and flexible No
 ![image](https://github.com/user-attachments/assets/c702a90e-5b16-4e8c-8f0c-a1c6b0d00a74)
 
 
-## Image as shown below vis API GATEWAY updated TO Dynamo DB Database
+## Image as shown below vis API GATEWAY updated to DynamoDB Database
 ![image](https://github.com/user-attachments/assets/98b2ca5e-3e7d-44fd-8bbb-2bb11856f075)
 
 
