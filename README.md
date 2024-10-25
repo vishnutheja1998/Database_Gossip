@@ -12,14 +12,6 @@ At the heart of Database_Gossip lies **Amazon DynamoDB**, a fast and flexible No
 4: Automatic scaling to handle high traffic loads
 
 
-## Image As shown Below as Data or values being updated FROM UI
-![image](https://github.com/user-attachments/assets/c702a90e-5b16-4e8c-8f0c-a1c6b0d00a74)
-
-
-## Image as shown below vis API GATEWAY updated to DynamoDB Database
-![image](https://github.com/user-attachments/assets/98b2ca5e-3e7d-44fd-8bbb-2bb11856f075)
-
-
 # User Interface Description: 
 The project features a simple and intuitive web-based user interface designed for efficient name submission. The UI consists of the following elements:
 
@@ -57,3 +49,10 @@ The lambda_handler function is the core component of the serverless application,
 
 This Lambda function efficiently handles incoming data, stores it in DynamoDB, and provides a response, demonstrating the seamless integration of AWS services in a serverless architecture.
 
+
+## Image As shown Below as Data or values being updated FROM UI
+![image](https://github.com/user-attachments/assets/c702a90e-5b16-4e8c-8f0c-a1c6b0d00a74)
+
+
+## Image as shown below vis API GATEWAY updated to DynamoDB Database
+![image](https://github.com/user-attachments/assets/98b2ca5e-3e7d-44fd-8bbb-2bb11856f075)
