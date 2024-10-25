@@ -1,29 +1,31 @@
-#FINAL SCRIPTS
-
 import json
 import boto3
-import time
+from time import gmtime, strftime
 
-dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('mydatabaseapp')
+# Initialize DynamoDB resource and table
+dynamo_resource = boto3.resource('dynamodb')
+user_table = dynamo_resource.Table('mydatabaseapp')
 
+def process_request(event, context):
+    # Get current UTC timestamp
+    current_utc = strftime('%a, %d %b %Y %H:%M:%S +0000', gmtime())
 
-def lambda_handler(event, context):
- # Get the current GMT time
-    gmt_time = time.gmtime()
+    # Combine first and last name
+    full_name = f"{event['firstName']} {event['lastName']}"
 
-    now = time.strftime('%a, %d %b %Y %H:%M:%S +0000', gmt_time)
-
-    name = event['firstName'] +' '+ event['lastName']
-
-# write name and time to the DynamoDB table using the object we instantiated and save response in a variable
-    response = table.put_item(
+    # Insert record into DynamoDB
+    db_response = user_table.put_item(
         Item={
-            'ID': name,
-            'LatestGreetingTime':now
-            })
-# return a properly formatted JSON object
+            'ID': full_name,
+            'LatestGreetingTime': current_utc
+        }
+    )
+
+    # Prepare and return JSON response
     return {
         'statusCode': 200,
-        'body': json.dumps('Hello from Lambda, ' + name)
+        'body': json.dumps(f'Greetings from Lambda, {full_name}')
     }
+
+# Set the main handler
+lambda_handler = process_request
